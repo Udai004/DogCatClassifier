@@ -1,6 +1,20 @@
+# if you are first user in git, configure maild id and name by below commands
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+
+
 git init
 git add .
+git status # to check if any modified or new file be commited
 git commit -m "Initial commit"
 git remote add origin remoteurl
 
 git push origin master
+
+#command to be executed in git
+#login to heroku using git profile
+heroku login
+
+#heroku creates a app in heroku application. Login to Heroku and check the details.
+heroku create
