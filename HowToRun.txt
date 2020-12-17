@@ -16,5 +16,128 @@ git push origin master
 #login to heroku using git profile
 heroku login
 
-#heroku creates a app in heroku application. Login to Heroku and check the details.
+#heroku creates a empty app in heroku application. Login to Heroku and check the details.
 heroku create
+$ heroku create
+Creating app... done, ⬢ safe-eyrie-40861
+https://safe-eyrie-40861.herokuapp.com/ | https://git.heroku.com/safe-eyrie-40861.git
+
+#move local code to remote server
+$ git remote -v
+heroku  https://git.heroku.com/safe-eyrie-40861.git (fetch)
+heroku  https://git.heroku.com/safe-eyrie-40861.git (push)
+origin  https://dogcattdl.scm.azurewebsites.net:443/dogcattdl.git (fetch)
+origin  https://dogcattdl.scm.azurewebsites.net:443/dogcattdl.git (push)
+
+
+udais@LAPTOP-NFTQE9BN MINGW64 /d/I-Neuron/1_ClassNotes/Deployement_DogCatClassifier/DogCatAzure (master)
+$ git push heroku master
+Enumerating objects: 40, done.
+Counting objects: 100% (40/40), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (34/34), done.
+Writing objects: 100% (40/40), 30.01 MiB | 759.00 KiB/s, done.
+Total 40 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.12
+remote: -----> Installing pip 20.1.1, setuptools 47.1.1 and wheel 0.34.2
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote:        Collecting absl-py==0.9.0
+remote:          Downloading absl-py-0.9.0.tar.gz (104 kB)
+remote:        Collecting astor==0.8.1
+remote:          Downloading astor-0.8.1-py2.py3-none-any.whl (27 kB)
+remote:        Collecting certifi==2019.11.28
+remote:          Downloading certifi-2019.11.28-py2.py3-none-any.whl (156 kB)
+remote:        Collecting click==7.1.1
+remote:          Downloading click-7.1.1-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.1
+remote:          Downloading Flask-1.1.1-py2.py3-none-any.whl (94 kB)
+remote:        Collecting Flask-Cors==3.0.8
+remote:          Downloading Flask_Cors-3.0.8-py2.py3-none-any.whl (14 kB)
+remote:        Collecting gast==0.3.3
+remote:          Downloading gast-0.3.3-py2.py3-none-any.whl (9.7 kB)
+remote:        Collecting google-pasta==0.2.0
+remote:          Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+remote:        Collecting grpcio==1.27.2
+remote:          Downloading grpcio-1.27.2-cp36-cp36m-manylinux2010_x86_64.whl (2.7 MB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting h5py==2.10.0
+remote:          Downloading h5py-2.10.0-cp36-cp36m-manylinux1_x86_64.whl (2.9 MB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.1
+remote:          Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+remote:        Collecting Keras==2.3.1
+remote:          Downloading Keras-2.3.1-py2.py3-none-any.whl (377 kB)
+remote:        Collecting Keras-Applications==1.0.8
+remote:          Downloading Keras_Applications-1.0.8-py3-none-any.whl (50 kB)
+remote:        Collecting Keras-Preprocessing==1.1.0
+remote:          Downloading Keras_Preprocessing-1.1.0-py2.py3-none-any.whl (41 kB)
+remote:        Collecting Markdown==3.2.1
+remote:          Downloading Markdown-3.2.1-py2.py3-none-any.whl (88 kB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting numpy==1.18.2
+remote:          Downloading numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+remote:        Collecting Pillow==7.0.0
+remote:          Downloading Pillow-7.0.0-cp36-cp36m-manylinux1_x86_64.whl (2.1 MB)
+remote:        Collecting protobuf==3.11.3
+remote:          Downloading protobuf-3.11.3-cp36-cp36m-manylinux1_x86_64.whl (1.3 MB)
+remote:        Collecting PyYAML==5.3.1
+remote:          Downloading PyYAML-5.3.1.tar.gz (269 kB)
+remote:        Collecting scipy==1.4.1
+remote:          Downloading scipy-1.4.1-cp36-cp36m-manylinux1_x86_64.whl (26.1 MB)
+remote:        Collecting six==1.14.0
+remote:          Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting tensorboard==1.14.0
+remote:          Downloading tensorboard-1.14.0-py3-none-any.whl (3.1 MB)
+remote:        Collecting tensorflow==1.14.0
+remote:          Downloading tensorflow-1.14.0-cp36-cp36m-manylinux1_x86_64.whl (109.2 MB)
+remote:        Collecting tensorflow-estimator==1.14.0
+remote:          Downloading tensorflow_estimator-1.14.0-py2.py3-none-any.whl (488 kB)
+remote:        Collecting termcolor==1.1.0
+remote:          Downloading termcolor-1.1.0.tar.gz (3.9 kB)
+remote:        Collecting Werkzeug==1.0.0
+remote:          Downloading Werkzeug-1.0.0-py2.py3-none-any.whl (298 kB)
+remote:        Collecting wrapt==1.12.1
+remote:          Downloading wrapt-1.12.1.tar.gz (27 kB)
+remote:        Building wheels for collected packages: absl-py, PyYAML, termcolor, wrapt
+remote:          Building wheel for absl-py (setup.py): started
+remote:          Building wheel for absl-py (setup.py): finished with status 'done'
+remote:          Created wheel for absl-py: filename=absl_py-0.9.0-py3-none-any.whl size=121931 sha256=932501502dcdbf4766066837c31a0ce02aba7507692e0fe0991c189ac87e8e3c
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-9vhr3v8o/wheels/c3/af/84/3962a6af7b4ab336e951b7877dcfb758cf94548bb1771e0679
+remote:          Building wheel for PyYAML (setup.py): started
+remote:          Building wheel for PyYAML (setup.py): finished with status 'done'
+remote:          Created wheel for PyYAML: filename=PyYAML-5.3.1-cp36-cp36m-linux_x86_64.whl size=402165 sha256=834eaa9a91a601928750abf10b31b7b638200bcf9367e8eb1adc3b8b641b069e
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-9vhr3v8o/wheels/e5/9d/ad/2ee53cf262cba1ffd8afe1487eef788ea3f260b7e6232a80fc
+remote:          Building wheel for termcolor (setup.py): started
+remote:          Building wheel for termcolor (setup.py): finished with status 'done'
+remote:          Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=c647d59bdea02abcbdc2ff707fb8d734127dacb1b6bde2a52507bdeb6318a420
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-9vhr3v8o/wheels/93/2a/eb/e58dbcbc963549ee4f065ff80a59f274cc7210b6eab962acdc
+remote:          Building wheel for wrapt (setup.py): started
+remote:          Building wheel for wrapt (setup.py): finished with status 'done'
+remote:          Created wheel for wrapt: filename=wrapt-1.12.1-cp36-cp36m-linux_x86_64.whl size=69732 sha256=8d3ca9eb422f515965adbc306b2848946143ce3f7fbe17271d18d3949da3af7b
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-9vhr3v8o/wheels/32/42/7f/23cae9ff6ef66798d00dc5d659088e57dbba01566f6c60db63
+remote:        Successfully built absl-py PyYAML termcolor wrapt
+remote:        Installing collected packages: six, absl-py, astor, certifi, click, Werkzeug, itsdangerous, MarkupSafe, Jinja2, Flask, Flask-Cors, gast, google-pasta, grpcio, gunicorn, numpy, h5py, Keras-Applica
+tions, PyYAML, scipy, Keras-Preprocessing, Keras, Markdown, Pillow, protobuf, tensorboard, tensorflow-estimator, termcolor, wrapt, tensorflow
+remote:        Successfully installed Flask-1.1.1 Flask-Cors-3.0.8 Jinja2-2.11.1 Keras-2.3.1 Keras-Applications-1.0.8 Keras-Preprocessing-1.1.0 Markdown-3.2.1 MarkupSafe-1.1.1 Pillow-7.0.0 PyYAML-5.3.1 Werkzeug
+-1.0.0 absl-py-0.9.0 astor-0.8.1 certifi-2019.11.28 click-7.1.1 gast-0.3.3 google-pasta-0.2.0 grpcio-1.27.2 gunicorn-20.0.4 h5py-2.10.0 itsdangerous-1.1.0 numpy-1.18.2 protobuf-3.11.3 scipy-1.4.1 six-1.14.0 ten
+sorboard-1.14.0 tensorflow-1.14.0 tensorflow-estimator-1.14.0 termcolor-1.1.0 wrapt-1.12.1
+remote: -----> Discovering process types
+remote:        Procfile declares types -> (none)
+remote:
+remote: -----> Compressing...
+remote:        Done: 245.8M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://safe-eyrie-40861.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/safe-eyrie-40861.git
+ * [new branch]      master -> master
