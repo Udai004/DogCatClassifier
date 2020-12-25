@@ -180,13 +180,20 @@ To https://git.heroku.com/safe-eyrie-40861.git
 
 
 
-=================================++++++++++++++++++++++++++++++++++++++===========================================
+
+# ============================================================== #
+ # Deployment in GCP (Google Cloud Platform) #
+# ============================================================== #
+
 # Steps we are following to deploy our app on GCP
+
+-- Login to GCP and next to search bar, click drop down and select create project option.
+-- Just provide project name and click create project.
 
     Step1: Your main python file name should be main.py
     Step2: Your flask object name, which we have defined in application.py should also be the application.
     Step3: Create a new file and name is as app.yaml
-    Step4: Add the belwo content to your app.yaml
+    Step4: Add the below content to your app.yaml
             runtime: python
             env: flex
             entrypoint: gunicorn -b :$PORT main:application
