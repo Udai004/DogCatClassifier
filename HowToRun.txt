@@ -209,7 +209,7 @@ To https://git.heroku.com/safe-eyrie-40861.git
               memory_gb: 0.5
               disk_size_gb: 10
 
-    Step5: Initialiase your local git using below command
+    Step5: Initialise your local git using below command
             git init
 
 
