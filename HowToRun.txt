@@ -154,7 +154,7 @@ To https://git.heroku.com/safe-eyrie-40861.git
 
 
 # ============================================================== #
- # Deployment in AWS (Elastic Beanstack and not in EC2 )#
+ # Deployment in AWS (Elastic Beanstalk and not in EC2 )#
 # ============================================================== #
 
    Step1: Your main python file name should be application.py
@@ -172,6 +172,10 @@ To https://git.heroku.com/safe-eyrie-40861.git
                     WSGIPath: application:application
     Step8 : Create a .zip file in the folder where this DogCatAzure project is present.
      ( I have created DogCatAzure_for_AWS_Deployment.zip in D:\I-Neuron\2_DeepLearning\1_ClassNotes\Deployement_DogCatClassifier\DogCatAzure)
+    Step9 : Once Zip file is created , go to aws.amazon.com, login to account, search for Elastic Beanstalk
+            and create a web application as we know that Elastic Beanstalk needs API or else it wont work.
+    Step10: Provide necessary details like project name, and tags are not required as of now. And upload zip file and deploy.
+    Step11: Once successfully deployed we will get link of the app as well as we can see logs,health of app and so on.
 
 
 
