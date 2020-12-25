@@ -13,8 +13,8 @@
 
 
 
-git init
-git add .
+git init # for initialise git
+git add . # for adding all file to git
 git status # to check if any modified or new file be commited
 git commit -m "Initial commit"
 git remote add origin remoteurl
@@ -211,6 +211,45 @@ To https://git.heroku.com/safe-eyrie-40861.git
 
     Step5: Initialise your local git using below command
             git init
+    Step6: Go to git hub and create a new repo ( created a new repo and link is https://github.com/Udai004/DogCatClassifier.git)
+        ###Just got below commands in git hub when created a new repository.
+		###create a new repository on the command line
+		###echo "# DogCatClassifier" >> README.md
+		###	git init
+		###	git add README.md
+		###	git commit -m "first commit"
+		###	git branch -M main
+		###	git remote add origin https://github.com/Udai004/DogCatClassifier.git
+		###	git push -u origin main
+		###
+		###…or push an existing repository from the command line
+		###	git remote add origin https://github.com/Udai004/DogCatClassifier.git
+		###	git branch -M main
+		###	git push -u origin main
+		###…or import code from another repository
+		###You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+	Step7 :  go to git command line and check for branches by using below command.
+	        git branch
+	        $ git branch
+            * master # here * mark shows which branch we are in. Currently I have only master .
+    Step8 : Create a new branch by using below command and change to created branch by using git checkout branch name as shown below.
+            $ git branch main
+
+            udais@LAPTOP-NFTQE9BN MINGW64 /d/I-Neuron/2_DeepLearning/1_ClassNotes/Deployement_DogCatClassifier/DogCatAzure (master)
+            $ git branch
+              main
+            * master
+
+            udais@LAPTOP-NFTQE9BN MINGW64 /d/I-Neuron/2_DeepLearning/1_ClassNotes/Deployement_DogCatClassifier/DogCatAzure (master)
+            $ git checkout main
+            Switched to branch 'main'
+                  HowToRun.txt
+    Step9 :
+
+
+
+
 
 
 
